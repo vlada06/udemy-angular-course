@@ -63,6 +63,9 @@
               "buildTarget": "udemy-angular-course:build:development"
             }
           },
+          "options": {
+            "port":4244
+          },
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
