@@ -1,13 +1,13 @@
-<div class="content">
-  <div class="left-side">
-    <h1>Welcome to {{ data.title }}</h1>
-    <script>alert("malicious script!!!")</script>
-    <p>Congratulations! Your app is running. 🎉</p>
-  </div>
-  <div class="right-side">
-    <img width="300" (click)="inIconClick()"
-         src="../assets/angular-icon.png" alt="Angular Icon"/>
-  </div>
-  <div class="divider" role="separator" aria-label="Divider"></div>
+<div class="top-menu">
+
+  <img class="logo"
+       src="https://angular-academy.s3.amazonaws.com/main-logo/main-page-logo-small-hat.png">
+
 </div>
-<input class="demo" (keyup)="onKeyUp(titleInput.value)" [value]="data.title" #titleInput />
+<h1 class="course-description"> {{ coreCourse.description }}</h1>
+<div class="courses">
+  <app-course-card title="rxjsCourse.description"></app-course-card>
+  <app-course-card></app-course-card>
+  <app-course-card></app-course-card>
+</div>
+
