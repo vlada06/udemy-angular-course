@@ -1,4 +1,6 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Course} from "../model/course";
+import {COURSES} from "../../db-data";
 
 @Component({
   selector: 'app-course-card',
@@ -9,12 +11,15 @@ import {Component, OnInit} from '@angular/core';
 
 export class CourseCardComponent {
 
-  title: string = "";
+  @Input() //  Effin important
+  course: Course;
 
-  // constructor() {
-  // }
-  //
-  // ngOnInit() {
-  // }
+
+
+  constructor() {
+  }
+
+  ngOnInit() {
+  }
 
 }
