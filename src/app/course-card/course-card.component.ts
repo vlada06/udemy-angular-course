@@ -11,9 +11,10 @@ import {COURSES} from "../../db-data";
 
 export class CourseCardComponent {
 
-  @Input() //  Effin important
-  course: Course;
-
+  @Input({
+    required: true
+  })
+  course: Course | any;
 
 
   constructor() {
