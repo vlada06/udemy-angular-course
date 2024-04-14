@@ -17,7 +17,7 @@ export class CourseCardComponent {
   })
   course: Course | any;
 
-  @Output(courseSelected)
+  @Output('courseSelected')
   courseEmmiter = new EventEmitter<Course> ();
   // @Output()
   // courseSelected = new EventEmitter<Course> ();
